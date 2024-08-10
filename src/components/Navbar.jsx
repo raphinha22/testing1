@@ -53,7 +53,7 @@ const Navbar = () => {
             })}
           </ul>
 
-          <div className={`space-y-4 px-4 mt-16 py-7 bg-branPrimary ${isMenuOpen ? "block fixed top-20 left-0 right-0" : "hidden"}`}>
+          <div className={`space-y-4 px-4 mt-16 py-7 bg-branPrimary ${isMenuOpen ? "block fixed top-0 left-0 right-0" : "hidden"}`}>
             {navItems.map(({ link, path }) => {
               return (
                 <Link
@@ -62,7 +62,7 @@ const Navbar = () => {
                   key={path}
                   smooth={true}
                   offset={-100}
-                  className="block text-base text-gray900 hover:text-branPrimary first:font-medium"
+                  className="block text-base text-white hover:text-branPrimary first:font-medium"
                 >
                   {link}
                 </Link>
